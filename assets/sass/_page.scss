@@ -1,0 +1,183 @@
+@import 'variables';
+
+#projetos {
+    article {
+        width: 80%;
+        margin: 0 auto;
+        h1 {
+            display: block;
+            font-size: 32px;
+            color: $color-primary;
+            line-height: 35px;
+            text-align: center;
+            font-weight: 800;
+            margin: 40px 0;
+        }
+
+        .projeto-data {
+            font-size: 18px;
+            color: white;
+            font-weight: 400;
+            text-align: center;
+            background: #6c6685;
+            width: 200px;
+            float: right;
+            padding: 10px 0;
+            @include mobileview {
+                width: 40%;
+            }
+        }
+        img {
+            width: 100%;
+        }
+
+        .descricao-projeto {
+            display: block;
+            text-align: justify;
+            font-size: 14px;
+            line-height: 24px;
+            color: $color-text;
+            margin: 40px 0;
+        }
+        .tipo-projeto {
+            font-size: 18px;
+            color: white;
+            font-weight: 400;
+            text-align: center;
+            background: $color-project;;
+            width: 200px;
+            float: left;
+            padding: 10px 0;
+            @include mobileview {
+                width: 40%;
+            }
+        }
+        .btn {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            text-transform: uppercase;
+            background: #252b42;
+            width: 200px;
+            padding: 10px 20px;
+            color: #fff;
+        }
+    }
+}
+
+.archives-projects {
+    display: flex;
+    width: 80%;
+    margin: 40px auto;
+    .container {
+        .menu {
+            width: 100%;
+        }
+    }
+    .projeto-filtro {
+        width: 25%;
+        margin-right: 5%;
+        h2 {
+            display: block;
+            text-align: center;
+            background: $color-project;
+            color: #fff;
+            margin: 0 auto;
+            padding: 10px 20px;
+            font-size: 16px;
+            @include mobileview {
+                width: 40%;
+            }
+        }
+
+        li {
+            a {
+                display: block;
+                text-transform: uppercase;
+                text-align: center;
+                font-size: 14px;
+                color: $color-text;
+                line-height: 25px;
+                padding: 5px;
+            }
+        }
+    }
+
+}
+
+.conteudo {
+    display: flex;
+    @include mobileview {
+        display: flow-root;
+    }
+    article {
+        width: 30%;
+        margin: 10px;
+        @include mobileview {
+            width: 95%;
+            margin-bottom: 40px;
+        }
+        img {
+            width: 100%;
+            margin: 20px 0;
+            border-radius: 10px;
+        }
+        .descricao-projeto {
+            width: 90%;
+            height: 70px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 24px;
+            @include mobileview {
+                text-align: center;
+                margin: 0 auto 20px;
+                font-size: 16px;
+            }
+        }
+        .tipo-projeto {
+            display: block;
+            text-align: center;
+            background: $color-project;
+            color: #fff;
+            width: 45%;
+            margin: 0 auto;
+            padding: 10px 20px;
+            @include mobileview {
+                width: 40%;
+            }
+        }
+    }
+}
+
+#conteudo-relacionado.loading {
+    opacity: 0.5; /* Reduz a opacidade durante o carregamento */
+    transition: opacity 0.3s ease; /* Adiciona uma transição suave */
+}
+
+#conteudo-relacionado.loading:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-top-color: #007bff;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}

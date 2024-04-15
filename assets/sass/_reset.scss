@@ -1,0 +1,68 @@
+@import 'variables';
+
+* {
+    margin: 0;
+    padding: 0;
+}
+//Fonts
+
+@font-face {
+    font-family: 'Graphik Bold';
+    src: url('../fonts/Graphik-Bold.woff2') format('woff2'),
+        url('../fonts/Graphik-Bold.woff') format('woff');
+        font-weight: bold;
+        font-style: normal;
+        font-display: swap;
+}
+
+@font-face {
+    font-family: 'Graphik Regular';
+    src: url('../fonts/Graphik-Regular.woff2') format('woff2'),
+        url('../fonts/Graphik-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    font-family: 'Graphik Regular';
+}
+
+.section-x {
+    width: 1440px;
+    margin: 0 auto;
+    @include notebookview {
+        width: 1210px;
+    }
+    @include mobileview {
+        width: 95%;
+    }
+}
+
+.content-x {
+    width: 826px;
+    margin: 0 auto;
+}
+
+.content-text {
+    width: 552px;
+    margin: 0 auto;
+    @include mobileview {
+        width: 80%;
+    }
+
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+button {
+    font-size: 20px;
+}
+

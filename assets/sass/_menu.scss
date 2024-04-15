@@ -1,0 +1,132 @@
+@import 'variables';
+
+//Menu Principal
+
+nav {
+    width: 480px;
+    height: 48px;
+    ul {
+        display: flex;
+        li {
+            width: 63px;
+            height: 48px;
+            padding: 10px;
+            a {
+                display: block;
+                color: $color-text-light;
+                font-size: 15px;
+                line-height: 28px;
+                font-weight: 400;
+                &:hover {
+                    color: $color-hover;
+                }
+            }
+        }
+    }
+}
+
+//Redes Sociais
+.menu-redes {    
+    width: 171px;
+    height: 41px;
+    margin-left: 220px;
+    padding-top: 10px;
+}
+
+#menu-redes-sociais,
+#menu-redes-sociais-1 {
+    display: flex;
+    position: relative;
+    @include mobileview {
+        justify-content: center;
+    }
+    li {
+        width: 41px;
+        height: 41px;
+        display: block;
+        padding: 10px;
+        &:first-child {
+            background: url("../images/twitter.png") no-repeat;
+        }
+
+        &:nth-child(2) {
+            background: url("../images/facebook.png") no-repeat;
+        }
+
+        &:nth-child(3) {
+            background: url("../images/linkedin.png") no-repeat;
+        }
+
+        a {
+            display: block;
+            color: transparent;
+            width: 41px;
+            height: 41px;
+        }
+    }
+   
+}
+.menu-responsivo{ 
+background-color:$backround-black; 
+width:100%; 
+float:left; 
+border-radius:3px; 
+overflow:hidden; 
+    .controla-menu { 
+        width:100%; 
+        float:left; 
+        display:none; 
+        padding: 0px;
+    }
+    ul { 
+        margin: 0 auto; 
+        list-style: none; 
+        li {
+            width:100%;
+            float:left;
+            a { 
+
+                width:100%; 
+                float:left;
+                padding:15px;
+                color:#fff; 
+                font-size:1em; 
+                text-decoration:none;
+                background:#575656;
+                border-bottom:1px #646363 solid;
+                margin-bottom:1px; 
+                &:hover { 
+                    background:$color-primary; 
+                }
+                }
+        }
+        
+    }
+    .btn-mobile{ 
+        width:100%;
+        display:block;
+        border-bottom:0;
+        text-align:left;
+        padding:10px; 
+        line-height:35px;
+        cursor:pointer; 
+        color:#fff;
+        i { 
+
+            font-size:1.6em; 
+            display:block;
+            float:right; 
+            width:35px; 
+            height:35px; 
+            background:transparent; 
+            text-align:center; 
+            line-height:40px; 
+            margin-left:10px; 
+            border-radius:50px;
+            
+            }
+        }
+    .menu-ativo { 
+        background-color:$color-primary!important;
+        }
+}

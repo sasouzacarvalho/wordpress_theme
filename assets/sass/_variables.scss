@@ -1,0 +1,52 @@
+//Color
+
+$color-primary: #2091f9;
+$color-secondary: #2dc071;
+$color-hover: #f15b07;
+$color-project: #f15b07;
+$color-text: #252b42;
+$color-text-light: #fff;
+$color-text-secondary: #374754;
+$backround-black: #252b42;
+$backround-light: #fff;
+
+// media query para responsivo direto do seletor do elemento
+@mixin mobileview {
+	@media only screen and (max-width: 769px) {
+		@content;
+	}
+}
+
+// media query para dispositivos de tela pequena direto do seletor do elemento
+@mixin smallmobileview {
+	@media only screen and (max-width: 360px) {
+		@content;
+	}
+}
+
+// media query para desktop direto do seletor do elemento
+@mixin desktopview {
+	@media screen and (min-width: 770px) {
+		@content;
+	}
+}
+
+// media query para tablet direto do seletor do elemento
+@mixin tabletview {
+	@media screen and (max-width: $grid-max) and (min-width: 770px) {
+		@content;
+	}
+}
+
+// media query para responsivo direto do seletor do elemento
+@mixin tabletandmobileview {
+	@media only screen and (max-width: 1023px) {
+		@content;
+	}
+}
+
+@mixin notebookview {
+	@media screen and (max-width: 1440px) and (min-width: 1024px) {
+		@content;
+	}
+}
