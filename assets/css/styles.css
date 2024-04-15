@@ -64,6 +64,11 @@ button {
   font-size: 20px;
 }
 
+.bar-top {
+  width: 80%;
+  margin: 40px auto;
+}
+
 header {
   background: #252b42;
 }
@@ -599,6 +604,79 @@ nav ul li a:hover {
   100% {
     transform: translate(-50%, -50%) rotate(360deg);
   }
+}
+.projetos-relacionados {
+  width: 80%;
+  margin: 0 auto;
+}
+.projetos-relacionados .related-posts ul {
+  display: flex;
+}
+.projetos-relacionados .related-posts ul li {
+  width: 30%;
+  margin: 10px;
+}
+.projetos-relacionados .related-posts ul li img {
+  width: 100%;
+  margin: 20px 0;
+  border-radius: 10px;
+}
+.projetos-relacionados .related-posts ul li .descricao-projeto {
+  width: 90%;
+  height: 70px;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  margin-bottom: 20px;
+  font-size: 14px;
+  line-height: 24px;
+}
+@media only screen and (max-width: 769px) {
+  .projetos-relacionados .related-posts ul li .descricao-projeto {
+    text-align: center;
+    margin: 0 auto 20px;
+    font-size: 16px;
+  }
+}
+
+form {
+  max-width: 500px;
+  margin: 20px auto 40px;
+}
+form input[type=text],
+form input[type=email],
+form input[type=tel],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+form input[type=submit] {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+form input[type=submit]:hover {
+  background-color: #0056b3;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+  color: #999;
+}
+
+form input:focus,
+form textarea:focus {
+  border-color: #f15b07;
+  outline: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

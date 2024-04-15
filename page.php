@@ -9,19 +9,19 @@ get_header(); ?>
             </div>            
         </div>
         <?php
-        // Iniciando o loop da página do WordPress
+        
         while (have_posts()) :
             the_post();
 
-            // Incluindo o conteúdo da página
+            
             get_template_part('template-parts/content', 'page');
 
-            // Se os comentários estiverem abertos ou se houver pelo menos um comentário, exibir a área de comentários
+            
             if (comments_open() || get_comments_number()) :
                 comments_template();
             endif;
 
-        endwhile; // Fim do loop da página
+        endwhile; 
         ?>
 
     </main><!-- #main -->

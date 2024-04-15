@@ -11,6 +11,6 @@ get_header();
 </div>
 
 <?php
-// Incluir o rodapé do WordPress
+
 get_footer();
 ?>

@@ -16,28 +16,24 @@ $backround-light: #fff;
 		@content;
 	}
 }
-
 // media query para dispositivos de tela pequena direto do seletor do elemento
 @mixin smallmobileview {
 	@media only screen and (max-width: 360px) {
 		@content;
 	}
 }
-
 // media query para desktop direto do seletor do elemento
 @mixin desktopview {
 	@media screen and (min-width: 770px) {
 		@content;
 	}
 }
-
 // media query para tablet direto do seletor do elemento
 @mixin tabletview {
 	@media screen and (max-width: $grid-max) and (min-width: 770px) {
 		@content;
 	}
 }
-
 // media query para responsivo direto do seletor do elemento
 @mixin tabletandmobileview {
 	@media only screen and (max-width: 1023px) {

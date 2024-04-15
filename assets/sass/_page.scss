@@ -181,3 +181,83 @@
         transform: translate(-50%, -50%) rotate(360deg);
     }
 }
+
+.projetos-relacionados {
+    width: 80%;
+    margin: 0 auto;
+    .related-posts {
+        h2 {
+    
+        }
+        ul {
+            display: flex;
+            li {
+                width: 30%;
+                margin: 10px;
+                img {
+                    width: 100%;
+                    margin: 20px 0;
+                    border-radius: 10px;
+                }
+                .descricao-projeto {
+                    width: 90%;
+                    height: 70px;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 3;
+                    overflow: hidden;
+                    -webkit-box-orient: vertical;
+                    margin-bottom: 20px;
+                    font-size: 14px;
+                    line-height: 24px;
+                    @include mobileview {
+                        text-align: center;
+                        margin: 0 auto 20px;
+                        font-size: 16px;
+                    }
+                }
+            }
+           
+    
+        }
+    }
+}
+
+
+form {
+    max-width: 500px;
+    margin: 20px auto 40px;
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        &:hover {
+            background-color: #0056b3;
+        }
+    }
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    color: #999;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: $color-project;
+    outline: none;
+}

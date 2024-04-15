@@ -18,8 +18,7 @@
         <header>
          <div class="center-header desktop-menu">
             <nav id="site-navigation" class="main-navigation" role="navigation">
-                <?php
-                
+                <?php                
                 if (has_nav_menu('primary')) {                
                     wp_nav_menu(array(
                         'theme_location' => 'primary',
@@ -63,12 +62,9 @@
             </div>
          </div>
          <div class="menu-responsivo">
-
             <span class="btn-mobile" href="#" title="Menu"><span class="material-symbols-outlined">menu</span></span>
-
             <div class="controla-menu">
-                <?php
-                    
+                <?php                    
                     if (has_nav_menu('primary')) {                
                         wp_nav_menu(array(
                             'theme_location' => 'primary',
@@ -76,8 +72,7 @@
                             'menu_class' => 'primary-menu',
                             'container' => false, 
                         ));
-                    } else {
-    
+                    } else {    
                         ?>
                     <ul class="fallback-menu">
                         <?php
@@ -100,6 +95,5 @@
                         });
                     </script>                         
             </div>
-
         </div><!--Menu Responsivo-->
         </header>

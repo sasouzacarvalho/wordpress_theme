@@ -27,9 +27,7 @@ get_header();
                             ?>
                         </ul>
                     </div>
-
-                </div>
-               
+                </div>               
             </div>
             <div class="conteudo" style="float: right; width: 70%;" id="tipo-projeto">
                         <!-- O conteúdo relacionado será carregado aqui via Ajax -->
@@ -44,9 +42,7 @@ jQuery(document).ready(function($) {
         e.preventDefault();
         var termo = $(this).data('termo');
         var $conteudoRelacionado = $('#tipo-projeto');
-
         $conteudoRelacionado.addClass('loading');
-
         $conteudoRelacionado.load('<?php echo esc_url(admin_url('admin-ajax.php')); ?>', {
             action: 'tipoProjetosFiltro',
             termo: termo
@@ -56,5 +52,4 @@ jQuery(document).ready(function($) {
     });
 });
 </script>
-
 <?php get_footer(); ?>

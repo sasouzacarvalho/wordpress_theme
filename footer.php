@@ -15,12 +15,12 @@
             </div>  
             <div class="content-right">
                 
-                        <?php
-                            wp_nav_menu(array(
-                                'theme_location' => 'redes-menu', 
-                                
-                            ));
-                            ?>  
+                <?php
+                    wp_nav_menu(array(
+                        'theme_location' => 'redes-menu', 
+                        
+                    ));
+                    ?>  
                             
             </div>  
         </ul>        
